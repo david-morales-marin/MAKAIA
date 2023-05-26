@@ -12,7 +12,7 @@ public class Ejercicio1 {
         System.out.print("Ingrese un Número de cliente: ");
         Integer num = scanner.nextInt();
 
-        if (num == 10007) {
+        if (num == 1000) {
             System.out.print("Ganaste un premio");
         }else{
             System.out.print("Sigue participando");
