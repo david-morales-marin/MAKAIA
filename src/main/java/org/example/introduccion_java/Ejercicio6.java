@@ -1,4 +1,4 @@
-package org.example;
+package org.example.introduccion_java;
 //Imprima los números del 1 al 10 al revés.
 public class Ejercicio6 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.introduccion_java;
 
 //Cree un bucle que sume los números del 100 al 200.
 
