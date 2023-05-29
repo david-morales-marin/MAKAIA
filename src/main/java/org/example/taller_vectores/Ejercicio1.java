@@ -15,7 +15,7 @@ public class Ejercicio1 {
         System.out.println("Ingrese los elementos del arreglo:");
         for (int i = 0; i < tamano; i++) {
             System.out.print("Elemento " + (i + 1) + ": ");
-            arreglo[i] = scanner.nextInt(); //
+            arreglo[i] = scanner.nextInt();
 
         }
         int elevado = 0;
