@@ -12,21 +12,25 @@ public class Ejercicio4 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese el tamaño del arreglo: ");
         int tamano = scanner.nextInt();
-
         int[] arreglo = new int[tamano];
-        int x = 0;
+
         System.out.println("Ingrese los elementos del arreglo:");
         for (int i = 0; i < tamano; i++) {
             System.out.print("Elemento " + (i + 1) + ": ");
                 arreglo[i] = scanner.nextInt();
 
+            for (int j = 0; j<i; j++){
+                if( arreglo[i] == arreglo[j]){
+                    System.out.println("El número ingresado ya se encuentra registrado: " );
+                    i--;
+                }
+            }
         }
-        int elevado = 0;
+        int a = 0;
         for (int j = 0; j<tamano; j++){
-           if( elevado == arreglo[j]){
-            System.out.println("El número de los elemenos al cuadrado es: " + elevado);
-        }
-
+            a = arreglo[j];
+            System.out.println("Los numeros del arreglo son: " + a);
         }
     }
+
 }
