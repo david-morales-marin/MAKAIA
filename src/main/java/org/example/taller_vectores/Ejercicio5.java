@@ -10,19 +10,21 @@ import java.util.Scanner;
 public class Ejercicio5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingrese el numero mayor");
-        int mayor = scanner.nextInt();
-        int[] arreglo = new int[10];
+       // System.out.println("Ingrese el numero mayor");
+        int mayor; //= scanner.nextInt();
+        int[] arreglo = new int[3];
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println("Ingrese 10 numeros:" + "Numero: " + (i + 1));
             arreglo[i] = scanner.nextInt();
 
-            for (int j = 0; j < i; j++) {
-                if (arreglo[i]>arreglo[mayor]){
-                    System.out.println("Los numeros mayores son: " + arreglo[i]);
+            for (int j = 0; j < 3; j++) {
+                if (arreglo[i]>arreglo[j]){
+                    mayor = arreglo[j];
+                    System.out.println("Los numeros mayores son: " + mayor);
                 }
             }
         }
+
     }
 }
