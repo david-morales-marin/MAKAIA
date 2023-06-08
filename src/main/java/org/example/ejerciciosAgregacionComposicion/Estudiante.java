@@ -10,10 +10,10 @@ public class Estudiante {
     public Estudiante() {
     }
 
-    public Estudiante(String nombreEstudiante, int edad, int numEstudiante) {
+    public Estudiante(String nombreEstudiante, int edad) {
         this.nombreEstudiante = nombreEstudiante;
         this.edad = edad;
-        this.numEstudiante = numEstudiante;
+        this.numEstudiante++;
     }
 
     public String getNombreEstudiante() {

@@ -15,12 +15,12 @@ public class MainUniversidad {
     // la consola la información de cada estudiante (nombre, edad y número de estudiante).
     public static void main(String[] args) {
         //punto L
-        Estudiante estudiante = new Estudiante("ambrosio",88,1);
+        Estudiante estudiante = new Estudiante("ambrosio",88);
         Universidad universidad = new Universidad("universidadxyz", estudiante,1);
 
         //punto M
-        Estudiante estudiante1 = new Estudiante("ramiro",48,23);
-        Estudiante estudiante2 = new Estudiante("edmundo",68,41);
+        Estudiante estudiante1 = new Estudiante("ramiro",48);
+        Estudiante estudiante2 = new Estudiante("edmundo",68);
 
         //punto N
         universidad.agregarEstudiante(estudiante1);
@@ -28,6 +28,7 @@ public class MainUniversidad {
 
         //punto O
         System.out.println(universidad.getNombre());
+        System.out.println(universidad.agregarEstudiante(););
 
         //punto p
 
