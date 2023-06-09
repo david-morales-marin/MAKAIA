@@ -28,7 +28,7 @@ public class MainUniversidad {
 
         //punto O
         System.out.println(universidad.getNombre());
-        System.out.println(universidad.agregarEstudiante(););
+       // System.out.println(universidad.agregarEstudiante(estudiante1););
 
         //punto p
 
