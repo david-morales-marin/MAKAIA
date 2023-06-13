@@ -1,6 +1,4 @@
-package org.example.herenciaYpolimorfismo.herenciaEjecicio2;
-
-import java.time.LocalDate;
+package org.example.herenciaYpolimorfismo.herencia2;
 
 //Crear la clase TarjetaCredito con los siguientes atributos:
 
@@ -89,7 +87,6 @@ public class TarjetaCredito {
     }
 
     public void imprimir(){
-      //  System.out.println(getEmisor()+getCupo()+getNumeroTarjeta()+getCvv()+getFechaVencimiento());
         System.out.println(toString());
     }
 }

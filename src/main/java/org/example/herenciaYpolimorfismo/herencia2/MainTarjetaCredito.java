@@ -1,4 +1,4 @@
-package org.example.herenciaYpolimorfismo.herenciaEjecicio2;
+package org.example.herenciaYpolimorfismo.herencia2;
 
 import java.time.LocalDate;
 

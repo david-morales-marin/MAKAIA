@@ -1,6 +1,4 @@
-package org.example.herenciaYpolimorfismo.herenciaEjecicio2;
-
-import java.time.LocalDate;
+package org.example.herenciaYpolimorfismo.herencia2;
 
 public class Platinum extends TarjetaCredito{
     public Platinum(String emisor, long cupo, String numeroTarjeta, int cvv, String fechaVencimiento) {
