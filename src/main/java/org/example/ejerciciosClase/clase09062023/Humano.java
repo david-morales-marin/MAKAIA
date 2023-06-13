@@ -22,7 +22,7 @@ public class Humano implements InterfazGeneral , InterfazAccionesHumanas{
     }
 
     public void razonar(){
-        System.out.println("El humano esta razonando, desde la clase Humano");
+        System.out.println("El humano esta razonando, desde la clase Humano" + nombre);
     }
 
     @Override
@@ -56,10 +56,10 @@ public class Humano implements InterfazGeneral , InterfazAccionesHumanas{
     }
 
     @Override
-    public void trabajar(String nombre, int cedula) {
+    public void trabajar() {
         this.nombre = nombre;
         this.cedula = cedula;
-        System.out.println(nombre + " esta trabajando" + cedula);
+        System.out.println(nombre + " esta trabajando " + cedula);
     }
 
     @Override

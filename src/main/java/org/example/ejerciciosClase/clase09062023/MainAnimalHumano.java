@@ -21,11 +21,11 @@ public class MainAnimalHumano {
         System.out.println();
 
         Hombre camilo = new Hombre();
-        camilo.setCedula(100934568);
         camilo.setNombre("camilo andres");
+        camilo.setCedula(1009345688);
         camilo.razonar();
         camilo.desplazarse();
         camilo.jugar();
-        camilo.trabajar(camilo.getNombre(),camilo.getCedula());
+        camilo.trabajar();
     }
 }
