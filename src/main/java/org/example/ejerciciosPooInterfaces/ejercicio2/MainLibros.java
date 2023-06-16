@@ -8,11 +8,16 @@ public class MainLibros {
     public static void main(String[] args) {
         Libro libro1 = new Libro("asi hablo zaratustra", "Nietzsche", 200.000);
         Libro libro2 = new Libro("Crimen y castigo", "dostovkysky", 350.000);
+        Libro libro3 = new Libro("que es la ilustracion", "Kant", 450.000);
 
         libro1.mostrarInformacion();
         libro1.obtenerPrecio(libro1.getPrecioLibro());
         libro2.mostrarInformacion();
         libro2.obtenerPrecio(libro2.getPrecioLibro());
+        libro3.mostrarInformacion();
+        libro3.obtenerPrecio(libro3.getPrecioLibro());
+
+        // src/main/java/org.example.ejerciciosPooInterfaces
 
     }
 }
