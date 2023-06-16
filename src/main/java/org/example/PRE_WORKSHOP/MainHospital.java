@@ -6,6 +6,7 @@ public class MainHospital {
         Usuario usuario = new UsuarioEps("david","morales",111,"edad");
         usuario.obtenerTipo();
         System.out.println(usuario.obtenerTipo());
-    
+
+
     }
 }
