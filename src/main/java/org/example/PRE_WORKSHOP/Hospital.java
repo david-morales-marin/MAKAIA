@@ -25,12 +25,11 @@ public class Hospital extends Especialidad{
         return "Medicina del Deporte";
     }
 
-    //El hospital tendrá el método agendar citas que recibirá como argumentos
-    //• Especialidad.
-    //• Usuario
-    //• Fecha de la cita.
-
     public String agendarCitas(){
+<<<<<<< HEAD
 
+=======
+        return "prueba citas";
+>>>>>>> 8e52691cdc2fb724f6687e4972f1e24f161178b0
     }
 }
