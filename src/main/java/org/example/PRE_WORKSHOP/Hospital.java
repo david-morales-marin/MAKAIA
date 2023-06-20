@@ -31,6 +31,6 @@ public class Hospital extends Especialidad{
     //• Fecha de la cita.
 
     public String agendarCitas(){
-        
+
     }
 }
