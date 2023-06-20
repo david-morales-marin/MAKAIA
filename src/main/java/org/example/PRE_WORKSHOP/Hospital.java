@@ -26,10 +26,6 @@ public class Hospital extends Especialidad{
     }
 
     public String agendarCitas(){
-<<<<<<< HEAD
-
-=======
         return "prueba citas";
->>>>>>> 8e52691cdc2fb724f6687e4972f1e24f161178b0
     }
 }
