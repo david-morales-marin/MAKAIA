@@ -8,7 +8,6 @@ public class MainHospital {
         System.out.println(usuario.obtenerTipo());
 
         Hospital hospital = new Hospital("david", 123, "medicina general");
-        hospital.agendarCitas(hospital.espMedicinaDeporte(), usuario, 8-12-2021);
 
 
     }
