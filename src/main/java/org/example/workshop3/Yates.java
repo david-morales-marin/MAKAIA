@@ -18,4 +18,19 @@ public class Yates extends Embarcacion {
     public double montoAlquilar() {
         return super.montoAlquilar();
     }
+
+    //En el caso de los yates debe ser posible
+    // comprarlos. Un yate tiene mayor
+    // lujo si tiene mas de 7 camarotes.
+
+    public double comprarYate(){
+        if(cantCamarotes > 7){
+            System.out.println("El yate tiene mayor lujo, ¿desea comprarlo?");
+            return getPrecioBase();
+        }else{
+            System.out.println("el yate no tiene el mayor lujo, ¿desea comprarlo?");
+            return super.montoAlquilar() + 1;
+        }
+    }
+
 }

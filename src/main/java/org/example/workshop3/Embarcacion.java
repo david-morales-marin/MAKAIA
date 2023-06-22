@@ -11,6 +11,10 @@ public class Embarcacion extends Capitan {
     private int anoFabricacion;
     private int eslora;
 
+    public double getPrecioBase() {
+        return precioBase;
+    }
+
     public Embarcacion(String nombre, String apellido, int matriculaNav, double precioBase, double valorAdicional, int anoFabricacion, int eslora) {
         super(nombre, apellido, matriculaNav);
         this.precioBase = precioBase;
@@ -28,7 +32,7 @@ public class Embarcacion extends Capitan {
     public double montoAlquilar(){
 
         if(anoFabricacion > 2020 ){
-            return precioBase + 20.000;
+            return precioBase + 20000;
         }else{
             return precioBase;
         }
