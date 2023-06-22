@@ -9,8 +9,13 @@ public class Veleros extends Embarcacion {
 
     private int cantMastiles;
 
-    public Veleros(String nombre, String apellido, int matriculaNav, double precioBase, double valorAdicional, String anoFabricacion, int eslora, int cantMastiles) {
+    public Veleros(String nombre, String apellido, int matriculaNav, double precioBase, double valorAdicional, int anoFabricacion, int eslora, int cantMastiles) {
         super(nombre, apellido, matriculaNav, precioBase, valorAdicional, anoFabricacion, eslora);
         this.cantMastiles = cantMastiles;
+    }
+
+    @Override
+    public double montoAlquilar() {
+        return super.montoAlquilar();
     }
 }

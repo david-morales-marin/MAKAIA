@@ -9,9 +9,13 @@ public class Yates extends Embarcacion {
 
     private int cantCamarotes;
 
-    public Yates(String nombre, String apellido, int matriculaNav, double precioBase, double valorAdicional, String anoFabricacion, int eslora, int cantCamarotes) {
+    public Yates(String nombre, String apellido, int matriculaNav, double precioBase, double valorAdicional, int anoFabricacion, int eslora, int cantCamarotes) {
         super(nombre, apellido, matriculaNav, precioBase, valorAdicional, anoFabricacion, eslora);
         this.cantCamarotes = cantCamarotes;
     }
 
+    @Override
+    public double montoAlquilar() {
+        return super.montoAlquilar();
+    }
 }

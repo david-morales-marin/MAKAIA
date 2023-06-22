@@ -8,15 +8,31 @@ public class Embarcacion extends Capitan {
   //  private Capitan capitan;
     private double precioBase;
     private double valorAdicional;
-    private String anoFabricacion;
+    private int anoFabricacion;
     private int eslora;
 
-    public Embarcacion(String nombre, String apellido, int matriculaNav, double precioBase, double valorAdicional, String anoFabricacion, int eslora) {
+    public Embarcacion(String nombre, String apellido, int matriculaNav, double precioBase, double valorAdicional, int anoFabricacion, int eslora) {
         super(nombre, apellido, matriculaNav);
         this.precioBase = precioBase;
         this.valorAdicional = valorAdicional;
         this.anoFabricacion = anoFabricacion;
         this.eslora = eslora;
+    }
+
+    //Dada cualquier embarcación el sistema debe
+    // permitir calcular el monto del alquiler.
+    // El monto monto del alquiler es el valor
+    // base y si el año de fabricación es mayor
+    // al 2020, se le suma un valor adicional de 20.000.
+
+    public double montoAlquilar(){
+
+        if(anoFabricacion > 2020 ){
+            return precioBase + 20.000;
+        }else{
+            return precioBase;
+        }
+
     }
 
 }
