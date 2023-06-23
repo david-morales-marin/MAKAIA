@@ -3,7 +3,7 @@ package org.example.workshop3;
 // un capitán, tiene un precio base, un
 // valor adicional, un año de fabricación y
 // la longitud en metros que se denomina eslora.
-public class Embarcacion extends Capitan {
+public abstract  class Embarcacion {
 
   //  private Capitan capitan;
     private double precioBase;
@@ -11,16 +11,9 @@ public class Embarcacion extends Capitan {
     private int anoFabricacion;
     private int eslora;
 
+    public abstract Embarcacion Embarcacion();
     public double getPrecioBase() {
         return precioBase;
-    }
-
-    public Embarcacion(String nombre, String apellido, int matriculaNav, double precioBase, double valorAdicional, int anoFabricacion, int eslora) {
-        super(nombre, apellido, matriculaNav);
-        this.precioBase = precioBase;
-        this.valorAdicional = valorAdicional;
-        this.anoFabricacion = anoFabricacion;
-        this.eslora = eslora;
     }
 
     //Dada cualquier embarcación el sistema debe
@@ -39,4 +32,15 @@ public class Embarcacion extends Capitan {
 
     }
 
+    public abstract boolean comprar();
+
+    @Override
+    public String toString() {
+        return "Embarcacion{" +
+                "precioBase=" + precioBase +
+                ", valorAdicional=" + valorAdicional +
+                ", anoFabricacion=" + anoFabricacion +
+                ", eslora=" + eslora +
+                '}';
+    }
 }

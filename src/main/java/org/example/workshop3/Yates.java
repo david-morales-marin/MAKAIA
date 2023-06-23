@@ -8,6 +8,7 @@ package org.example.workshop3;
 public class Yates extends Embarcacion {
 
     private int cantCamarotes;
+    private int compraYate;
 
     public Yates(String nombre, String apellido, int matriculaNav, double precioBase, double valorAdicional, int anoFabricacion, int eslora, int cantCamarotes) {
         super(nombre, apellido, matriculaNav, precioBase, valorAdicional, anoFabricacion, eslora);
@@ -25,12 +26,19 @@ public class Yates extends Embarcacion {
 
     public double comprarYate(){
         if(cantCamarotes > 7){
-            System.out.println("El yate tiene mayor lujo, ¿desea comprarlo?");
-            return getPrecioBase();
+            System.out.println("El yate tiene mayor lujo");
+            return compraYate;
         }else{
-            System.out.println("el yate no tiene el mayor lujo, ¿desea comprarlo?");
-            return super.montoAlquilar() + 1;
+            System.out.println("el yate no es de lujo");
+            return compraYate;
         }
+       // return compraYate;
     }
 
+    @Override
+    public String toString() {
+        return "Yates{" +
+                "cantCamarotes=" + cantCamarotes +
+                '}';
+    }
 }
