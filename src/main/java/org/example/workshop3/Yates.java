@@ -40,4 +40,11 @@ public class Yates extends Embarcacion {
             System.out.println("El yate no tiene el mayor lujo");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Yates{" +
+                "cantCamarotes=" + cantCamarotes +
+                '}';
+    }
 }

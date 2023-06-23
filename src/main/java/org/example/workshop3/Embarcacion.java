@@ -36,4 +36,14 @@ public abstract class Embarcacion {
 
     public abstract void evaluar();
 
+    @Override
+    public String toString() {
+        return "Embarcacion{" +
+                "capitan=" + capitan +
+                ", precioBase=" + precioBase +
+                ", valorAdicional=" + valorAdicional +
+                ", anoFabricacion=" + anoFabricacion +
+                ", eslora=" + eslora +
+                '}';
+    }
 }

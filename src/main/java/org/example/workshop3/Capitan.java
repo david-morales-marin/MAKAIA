@@ -10,7 +10,22 @@ public  class Capitan{ //extends Embarcacion{
     private String apellido;
     private int matriculaNav;
 
-   /* public Capitan(Capitan capitan, double precioBase, double valorAdicional, int anoFabricacion, int eslora, String nombre, String apellido, int matriculaNav) {
+    public Capitan(String nombre, String apellido, int matriculaNav) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.matriculaNav = matriculaNav;
+    }
+
+    @Override
+    public String toString() {
+        return "Capitan{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", matriculaNav=" + matriculaNav +
+                '}';
+    }
+
+    /* public Capitan(Capitan capitan, double precioBase, double valorAdicional, int anoFabricacion, int eslora, String nombre, String apellido, int matriculaNav) {
         super(capitan, precioBase, valorAdicional, anoFabricacion, eslora);
         this.nombre = nombre;
         this.apellido = apellido;
