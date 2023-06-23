@@ -5,40 +5,7 @@ package org.example.workshop3;
 // cada una tiene además otras características.
 // Los veleros tienen cantidad
 //de mástiles y los yates cantidad de camarotes.
-public class Yates extends Embarcacion {
+public class Yates {
 
-    private int cantCamarotes;
-    private int compraYate;
 
-    public Yates(String nombre, String apellido, int matriculaNav, double precioBase, double valorAdicional, int anoFabricacion, int eslora, int cantCamarotes) {
-        super(nombre, apellido, matriculaNav, precioBase, valorAdicional, anoFabricacion, eslora);
-        this.cantCamarotes = cantCamarotes;
-    }
-
-    @Override
-    public double montoAlquilar() {
-        return super.montoAlquilar();
-    }
-
-    //En el caso de los yates debe ser posible
-    // comprarlos. Un yate tiene mayor
-    // lujo si tiene mas de 7 camarotes.
-
-    public double comprarYate(){
-        if(cantCamarotes > 7){
-            System.out.println("El yate tiene mayor lujo");
-            return compraYate;
-        }else{
-            System.out.println("el yate no es de lujo");
-            return compraYate;
-        }
-       // return compraYate;
-    }
-
-    @Override
-    public String toString() {
-        return "Yates{" +
-                "cantCamarotes=" + cantCamarotes +
-                '}';
-    }
 }
