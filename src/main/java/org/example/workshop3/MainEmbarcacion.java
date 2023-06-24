@@ -13,11 +13,11 @@ public class MainEmbarcacion {
 
         System.out.println("El valor a pagar por el yate es de: " + yate.montoAlquiler());
         yate.evaluar();
-        yate.toString();
+       System.out.println(yate.toString());
 
         System.out.println("El valor a pagar por el velero es de: " + velero.montoAlquiler());
         velero.evaluar();
-        velero.toString();
+        System.out.println(velero.toString());
 
     }
 }

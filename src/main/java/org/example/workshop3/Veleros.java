@@ -34,8 +34,6 @@ public class Veleros extends Embarcacion {
 
     @Override
     public String toString() {
-        return "Veleros{" +
-                "cantMastiles=" + cantMastiles +
-                '}';
+        return super.toString();
     }
 }

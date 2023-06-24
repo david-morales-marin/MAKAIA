@@ -43,8 +43,6 @@ public class Yates extends Embarcacion {
 
     @Override
     public String toString() {
-        return "Yates{" +
-                "cantCamarotes=" + cantCamarotes +
-                '}';
+        return super.toString();
     }
 }
