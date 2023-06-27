@@ -11,7 +11,7 @@ public class MainFiguras {
         System.out.println(cuadrado.dibujar());
         System.out.println(rectangulo.dibujar()); */
 
-        FiguraGeometrica figura = FactoriaFigura.obteberFiguraGeometrica("rectangulo");
+        FiguraGeometrica figura = FactoriaFigura.obteberFiguraGeometrica("cuadrado");
         System.out.println(figura.dibujar());
 
     }

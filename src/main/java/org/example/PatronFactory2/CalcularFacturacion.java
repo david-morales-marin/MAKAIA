@@ -2,19 +2,18 @@ package org.example.PatronFactory2;
 
 public class CalcularFacturacion {
 
-    private double comprar;
+    public static Facturacion calcularValorIva(double compra){
+           double x;
+       if( compra > 100){
 
-    public CalcularFacturacion(double comprar) {
-        this.comprar = comprar;
-    }
-
-    public Facturacion calcular(double comprar ){
-
-        if(calcular(1000).facturacionIva(1000) > 10000 ){
-            return new FacturacionEspecial();
-        }else{
-            return new FacturacionNormal();
+          x = compra * (1 + 0.19);
+            System.out.println("La compra total es de: " + x);
+           return new FacturacionEspecial();
+       }else{
+           x = compra * (1 + 0.08);
+           System.out.println("La compra total es de: " + x);
+           return new FacturacionNormal();
         }
-       // return new
+
     }
 }
