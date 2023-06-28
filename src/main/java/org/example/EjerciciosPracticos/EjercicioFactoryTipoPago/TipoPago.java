@@ -4,11 +4,11 @@ import com.sun.org.apache.bcel.internal.generic.SWITCH;
 
 public class TipoPago {
 
-    public Pago tipoPagoUsar(Pago pago){
+    public static Pago tipoPagoUsar(String pago){
         if(pago == null){
             throw new IllegalArgumentException("El tipo de pago es nulo");
         }
-        switch (pago){
+        switch (pago.toLowerCase()){
             case "applePlay":
                 return new PagoApplePlay();
             case "Bitcon":

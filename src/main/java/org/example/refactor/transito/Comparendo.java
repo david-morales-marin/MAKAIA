@@ -1,4 +1,4 @@
-package org.example.refactor;
+package org.example.refactor.transito;
 
 public class Comparendo {
 

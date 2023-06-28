@@ -1,4 +1,6 @@
-package org.example.refactor;
+package org.example.refactor.transito;
+
+import org.example.refactor.transito.Comparendo;
 
 public class Main {
     public static void main(String[] args) {
