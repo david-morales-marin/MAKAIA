@@ -1,7 +1,6 @@
-package org.example.refactor.bd;
+package org.example.Patron.refactor.bd;
 
-public class Oracle extends TipoBD{
-
+public class MySql extends TipoBD{
 
     @Override
     public String tipoBD(String nombre, String apellido) {
@@ -10,6 +9,6 @@ public class Oracle extends TipoBD{
 
     @Override
     public void tipoBd() {
-        System.out.println("Utilizando la bd Oracle");
+        System.out.println("Utilizando la bd MySql");
     }
 }

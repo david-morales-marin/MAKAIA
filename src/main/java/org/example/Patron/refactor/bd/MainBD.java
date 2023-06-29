@@ -1,4 +1,4 @@
-package org.example.refactor.bd;
+package org.example.Patron.refactor.bd;
 
 public class MainBD {
     public static void main(String[] args) {

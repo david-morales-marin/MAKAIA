@@ -1,4 +1,4 @@
-package org.example.refactor.transito;
+package org.example.Patron.refactor.transito;
 
 public abstract class TipoVehiculo {
 
