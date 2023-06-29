@@ -26,8 +26,14 @@ public class CuentaBuilder implements Builder{
         this.saldo = saldo;
         return this;
     }
+
+
+
     @Override
     public Cuenta build() {
-        return null;
+        if(saldo == null){
+            throw new RuntimeException("Por obligacion se debe tener un saldo inicial");
+        }
+        return new Cuenta(numeroCuenta, nombreDueno, saldo, tipoCuenta);
     }
 }
