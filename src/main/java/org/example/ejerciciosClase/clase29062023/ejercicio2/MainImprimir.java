@@ -10,5 +10,6 @@ public class MainImprimir {
         empleado.imprimir();
         empleado1.imprimir();
         empleado2.imprimir();
+        empleado.imprimir();
     }
 }
