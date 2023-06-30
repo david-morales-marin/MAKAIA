@@ -15,8 +15,8 @@ public class Empleado {
         this.nombre = nombre;
     }
 
-    public void imprimir(Imprimir imprimir){
-
-        System.out.println("El empleado " + nombre + "realizo la impresión número " + Imprimir.getInstance(imprimir.getImpresiones()));
+    public void imprimir(){
+        System.out.println("El empleado " + nombre + " realizo la impresión número " +
+              Imprimir.getInstance().getImpresiones()  );
     }
 }

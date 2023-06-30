@@ -1,13 +1,21 @@
 package org.example.ejerciciosClase.clase29062023.ejercicio2;
 
-
 public class Imprimir {
     private static Imprimir Conteo;
 
-    private int impresiones;
+    private int impresiones = 0;
 
-    private Imprimir( int impresiones){
-        this.impresiones = impresiones;
+    private Imprimir(){
+
+    }
+
+    public static Imprimir getInstance(){
+        if(Conteo == null){
+            Conteo = new Imprimir();
+            System.out.println("Impresion realizada con exito");
+       }
+        Conteo.impresiones++;
+        return Conteo;
     }
 
     public int getImpresiones() {
@@ -16,15 +24,6 @@ public class Imprimir {
 
     public void setImpresiones(int impresiones) {
         this.impresiones = impresiones;
-    }
-
-    public static Imprimir getInstance(Integer impresiones){
-        if(Conteo == null){
-            Conteo = new Imprimir(impresiones);
-            System.out.println("Impresion realizada con exito");
-        }
-        impresiones++;
-        return Conteo;
     }
 
 }
