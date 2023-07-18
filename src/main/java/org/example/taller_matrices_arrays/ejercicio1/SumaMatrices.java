@@ -15,7 +15,7 @@ resultantes de la suma*/
 public class SumaMatrices {
     public static void main(String[] args) {
         int [][] matriz1 = {{1,2,3},{4,5,6},{7,8,9}};
-        int [][] matriz2 = {{3,4,2},{5,9,6},{2,7,8}};
+        int [][] matriz2 = {{9,4,2},{5,9,6},{2,7,8}};
         int [][] sumaMatrices = new int[3][3];
 
         if(matriz1.length == matriz2.length){
